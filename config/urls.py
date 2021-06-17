@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from happyWorkShop import views
+from happyWorkShop.views import *
 
 
 urlpatterns = [
-    path('', views.index),
+    path('', index, name="index"),
+    path('questionsView/', questionsView),
     path('admin/', admin.site.urls),
 ]

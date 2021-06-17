@@ -277,7 +277,8 @@
           </div>
           <div class="question_line line"></div>
 
-          <form action="" method="post">
+          <form action="questionsView/" method="post">
+            {% csrf_token %}
             <div class="row g-3 align-items-center mt-2">
               <!-- 성함, 이메일, 전화번호, 내용 -->
 
@@ -285,7 +286,12 @@
                 <label for="name_value" class="col-form-label">성함</label>
               </div>
               <div class="col-6">
-                <input type="text" id="name_value" class="form-control" />
+                <input
+                  type="text"
+                  name="name_value"
+                  id="name_value"
+                  class="form-control"
+                />
               </div>
             </div>
 
@@ -294,7 +300,12 @@
                 <label for="email_value" class="col-form-label">이메일</label>
               </div>
               <div class="col-6">
-                <input type="text" id="email_value" class="form-control" />
+                <input
+                  type="email"
+                  name="email_value"
+                  id="email_value"
+                  class="form-control"
+                />
               </div>
             </div>
 
@@ -303,7 +314,12 @@
                 <label for="phone_value" class="col-form-label">전화번호</label>
               </div>
               <div class="col-6">
-                <input type="text" id="phone_value" class="form-control" />
+                <input
+                  type="text"
+                  name="phone_value"
+                  id="phone_value"
+                  class="form-control"
+                />
               </div>
             </div>
 
@@ -314,6 +330,7 @@
               <div class="col-6">
                 <textarea
                   type="text"
+                  name="content_value"
                   id="content_value"
                   class="form-control"
                   rows="10"
