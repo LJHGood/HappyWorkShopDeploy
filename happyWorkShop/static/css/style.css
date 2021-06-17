@@ -1,0 +1,303 @@
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.content {
+  height: 1080px;
+}
+
+img {
+  width: 100%;
+}
+
+#services {
+  background-color: #095b49;
+}
+
+.introduce_col1 {
+  position: relative;
+  left: 16.7%;
+  top: 20.4%;
+  width: 56.3%;
+  height: 59.3%;
+  background-color: #f0f0f0;
+}
+
+.line {
+  background-color: #2ea490;
+}
+
+.introduce_line {
+  position: relative;
+  width: 7.4%;
+  height: 0.9%;
+  left: 7.7%;
+  top: 18.1%;
+}
+
+.h_80 {
+  height: 80%;
+}
+
+.h_90 {
+  height: 90%;
+}
+
+.review_line {
+  position: relative;
+  width: 80px;
+  height: 6px;
+  top: 15%;
+}
+
+.portfolio_line {
+  position: relative;
+  width: 80px;
+  height: 6px;
+  top: 68%;
+}
+
+.portfolio_background {
+  position: relative;
+  margin-top: 27%;
+}
+
+.portfolio_img {
+  position: relative;
+  top: -106%;
+  height: 130%;
+}
+
+.portfolio_back_c1 {
+  background-color: #99b576;
+  height: 40%;
+  overflow: hidden;
+}
+
+.portfolio_back_c2 {
+  background-color: #0b5b49;
+  height: 40%;
+  overflow: hidden;
+}
+
+.portfolio1 {
+  height: 55%;
+}
+
+.portfolio2 {
+  height: 55%;
+}
+
+.introduce_content {
+  position: relative;
+  left: 7.5%;
+  top: 23.5%;
+  line-height: 1.6;
+  color: #777777;
+}
+
+.introduce_col2 {
+  position: relative;
+  left: 39.6%;
+  top: -32%;
+  width: 43.8%;
+  height: 44.4%;
+}
+
+.introduce_message {
+  position: relative;
+  left: 7.4%;
+  top: 12.5%;
+  color: #222222;
+}
+
+.services_text {
+  color: #222222;
+}
+.portfolio_introduce {
+  position: relative;
+  top: 52.3%;
+  height: 120px;
+  color: #222222;
+}
+
+#review {
+  background-color: #f6f6f6;
+}
+
+.font_40 {
+  font-size: 40px;
+}
+
+.portfolio_name {
+  color: #555555;
+}
+
+.services_line {
+  position: relative;
+  width: 80px;
+  height: 6px;
+  background-color: #ffffff;
+  top: 6%;
+}
+
+.services_introduce {
+  position: relative;
+  top: 22.3%;
+  height: 120px;
+  color: #ffffff;
+}
+
+.services_content {
+  background-color: white;
+  width: 18%;
+  height: 100%;
+  margin: 1%;
+  border-radius: 2px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.16);
+}
+
+.review_content {
+  background-color: white;
+  width: 18%;
+  height: 100%;
+  margin: 0.5%;
+  border-radius: 2px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.16);
+}
+
+.review_title {
+  position: relative;
+  top: 33%;
+  height: 120px;
+  color: #222222;
+}
+
+.services {
+  height: 52%;
+}
+
+.review {
+  position: relative;
+  height: 40%;
+}
+
+.radius_box {
+  margin-top: 20%;
+  width: 40%;
+  border-radius: 70%;
+  overflow: hidden;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img_radius {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img_portfolio {
+  width: 100%;
+  height: 80%;
+  margin-top: 10px;
+  object-fit: cover;
+}
+
+.font_26 {
+  font-size: 26px;
+}
+
+.font_24 {
+  font-size: 24px;
+}
+
+.font_20 {
+  font-size: 20px;
+}
+
+.font_13 {
+  font-size: 13px;
+}
+.font_15 {
+  font-size: 15px;
+}
+
+.font_18 {
+  font-size: 18px;
+}
+
+.question_line {
+  position: relative;
+  width: 80px;
+  height: 6px;
+  margin-top: 3%;
+  margin-bottom: 4%;
+}
+
+.question_title {
+  position: relative;
+  top: 15%;
+  height: 120px;
+  color: #222222;
+}
+
+.question_box {
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.send_button {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bottom {
+  background-color: #444444;
+  height: auto;
+  color: #ffffff;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#mainNav > div > ul > li a {
+  color: white;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+#mainNav {
+  background-color: #095b49;
+}
+
+.mouse_over:hover {
+  background-color: #929cfc1a;
+}
+.mouse_over:hover {
+  background-color: #929cfc1a;
+}
+
+.img_portfolio_deatil {
+  background-size: contain;
+  width: 50%;
+}
+
+.img_portfolio_deatil_img {
+  height: 100%;
+  text-align: center;
+}
+
+.portfolio_deatil_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
