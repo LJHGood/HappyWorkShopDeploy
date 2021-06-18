@@ -20,6 +20,6 @@ from happyWorkShop.views import *
 
 urlpatterns = [
     path('', index, name="index"),
-    path('questionsView/', questionsView),
+    path('contactUsView/', contactUsView),
     path('admin/', admin.site.urls),
 ]
