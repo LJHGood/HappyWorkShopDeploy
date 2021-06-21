@@ -1,672 +1,431 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>행복공방</title>
 
-    <!-- 부트스트랩 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>행복공방</title>
 
-    <!-- 제작 -->
+  <!-- 부트스트랩 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
 
-    <!-- PC CSS (해상도 1024px 이상) -->
-    <!-- <link rel="stylesheet" media="screen and (min-width:1024px) and (max-width: 2048px)" href="css/pc_css.css" /> -->
+  <!-- 제작 -->
 
-    <!-- 테블릿 가로, 테블릿 세로 CSS (해상도 768px ~ 1023px) -->
-    <!-- <link rel="stylesheet" media="screen and (min-width:768px) and (max-width: 1023px)" href="css/tablet_css.css" /> -->
+  <!-- PC CSS (해상도 1024px 이상) -->
+  <!-- <link rel="stylesheet" media="screen and (min-width:1024px) and (max-width: 2048px)" href="css/pc_css.css" /> -->
 
-    <!-- 모바일 가로, 모마일 세로 CSS (해상도 480px ~ 767px)-->
-    <!-- <link rel="stylesheet" media="screen and (max-width: 767px)" href="css/mobile_css.css" /> -->
+  <!-- 테블릿 가로, 테블릿 세로 CSS (해상도 768px ~ 1023px) -->
+  <!-- <link rel="stylesheet" media="screen and (min-width:768px) and (max-width: 1023px)" href="css/tablet_css.css" /> -->
 
-    {% load static %}
+  <!-- 모바일 가로, 모마일 세로 CSS (해상도 480px ~ 767px)-->
+  <!-- <link rel="stylesheet" media="screen and (max-width: 767px)" href="css/mobile_css.css" /> -->
 
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  {% load static %}
 
-    <!-- 노트 산스 KR -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
 
-  <body>
-    <!-- 네비  -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#home">홈</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#introduce">소개</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">대표소개</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">서비스</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#review">후기</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#question">문의하기</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <!-- 노트 산스 KR -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet" />
+</head>
 
-    <!-- 홈 -->
-    <div class="row content" id="home" style="height: auto">
-      <img src="{% static '/images/home1.png' %}" alt="" />
-    </div>
-
-    <!-- 소개 -->
-    <div class="row content" id="introduce">
-      <!-- <img src="./images/introducePage.png" alt=""> -->
-
-      <!-- <div class="col abc"></div> -->
-      <div class="introduce_col1">
-        <div class="introduce_message font_40">
-          <div>행복공방<br /><strong>소개</strong></div>
-        </div>
-
-        <div class="introduce_line line"></div>
-
-        <div class="introduce_content">
-          안녕하세요!<br />
-          우리는 행복공방입니다.<br />
-          우리는 당신의 행복을 응원합니다.<br />
-          감사합니다.
-        </div>
-      </div>
-
-      <div class="introduce_col2">
-        <!-- 행복공방2 -->
-        <!-- 행복 공방 소개 동영상 -->
-        <iframe
-          width="100%"
-          height="100%"
-          src="https://www.youtube.com/embed/WDYw_KsHQIE"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </div>
-
-    <!--대표소개  -->
+<body>
+  <!-- 네비  -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-      <div class="row content" id="portfolio">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">홈</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#introduce">소개</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">대표소개</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">서비스</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#review">후기</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#question">문의하기</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 홈 -->
+  <div class="row content" id="home" style="height: auto">
+    <img src="{% static '/images/home1.png' %}" alt="" />
+  </div>
+
+  <!-- 소개 -->
+  <div class="row content" id="introduce">
+    <div class="introduce_col1">
+      <div class="introduce_message font_40">
+        <div>행복공방<br /><strong>소개</strong></div>
+      </div>
+
+      <div class="introduce_line line"></div>
+
+      <div class="introduce_content">
+        {{ introduceModel.content|linebreaks }}
+      </div>
+    </div>
+
+    <div class="introduce_col2">
+      <!-- 행복공방2 -->
+      <!-- 행복 공방 소개 동영상 -->
+      <iframe width="100%" height="100%" src="{{ introduceModel.youtubeLink }}" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!--대표소개  -->
+  <div class="container">
+    <div class="row content" id="portfolio">
+      <div class="row justify-content-center text-center">
+        <div class="portfolio_introduce font_40">
+          <div>행복공방<br /><strong>대표소개</strong></div>
+        </div>
+        <div class="portfolio_line line"></div>
+      </div>
+
+      <div class="row h_80 portfolio_background">
+        <div class="col portfolio_back_c1"></div>
+        <div class="col portfolio_back_c2"></div>
+      </div>
+
+      <div class="row portfolio_img">
+
+        {% for representative in representativeIntroductionModel %}
+        <div class="col portfolio1 mouse_over" data-bs-toggle="modal" data-bs-target="#r_modal{{ representative.id }}">
+          <img class="img_portfolio" src="{{ representative.profileImage.url }}" alt="" />
+          <div class="text-center font_40 portfolio_name">{{representative.name}} 대표</div>
+        </div>
+        {% endfor %}
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 서비스 -->
+  <div class="row content" id="services">
+    <div class="row justify-content-center text-center">
+      <div class="services_introduce font_40">
+        <div>행복공방<br /><strong>서비스</strong></div>
+      </div>
+      <div class="services_line"></div>
+    </div>
+
+    <div class="row services justify-content-center">
+      {% for service in serviceModel %}
+      <div class="services_content mouse_over" data-bs-toggle="modal" data-bs-target="#modal{{service.id}}">
+        <img class="img_portfolio" src="{{  service.profileImage.url  }}" alt="" />
+        <div class="services_text services_text text-center font_26 mt-3">
+          {{ service.name }}
+        </div>
+      </div>
+      {% endfor %}
+
+
+      <!-- 후기 -->
+      <div class="row content" id="review">
         <div class="row justify-content-center text-center">
-          <div class="portfolio_introduce font_40">
-            <div>행복공방<br /><strong>대표소개</strong></div>
+          <div class="review_title font_40">
+            <div>행복공방<br /><strong>고객후기</strong></div>
           </div>
-          <div class="portfolio_line line"></div>
+          <div class="review_line line"></div>
         </div>
 
-        <div class="row h_80 portfolio_background">
-          <div class="col portfolio_back_c1"></div>
-          <div class="col portfolio_back_c2"></div>
-        </div>
+        <div class="row review justify-content-center">
+          {% for review in reviewModel %}
+          <div class="review_content">
 
-        <div class="row portfolio_img">
-          <div
-            class="col portfolio1 mouse_over"
-            data-bs-toggle="modal"
-            data-bs-target="#modal1"
-          >
-            <img
-              class="img_portfolio"
-              src="{% static '/images/김태호대표.png' %}"
-              alt=""
-            />
+            <div class="radius_box">
+              <img class="img_radius" src="{{ review.image.url }}" alt="" />
+            </div>
+            <div class="services_text text-center font_15 mt-3">{{ review.name }}</div>
+            <div class="services_text text-center font_18 mt-3">
+              {{ review.title }}
+            </div>
+            <div class="services_text text-center font_13 mt-5">
+              {{ review.content|linebreaks }}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+
+      </div>
+
+      <!-- 문의하기 -->
+      <div class="row content" id="question">
+        <div class="col">
+          <img class="img_radius" src="{{ questionModel.image.url }}" alt="" />
+        </div>
+        <div class="col">
+          <div class="question_box">
+            <div class="question_title font_40">
+              <div>행복공방<br /><strong>상담 받기</strong></div>
+            </div>
+            <div class="question_line line"></div>
+
+            <form action="contactUsView/" method="post">
+              {% csrf_token %}
+              <div class="row g-3 align-items-center mt-2">
+                <!-- 성함, 이메일, 전화번호, 내용 -->
+
+                <div class="col-2">
+                  <label for="name_value" class="col-form-label">성함</label>
+                </div>
+                <div class="col-6">
+                  <input type="text" name="name_value" id="name_value" class="form-control" />
+                </div>
+              </div>
+
+              <div class="row g-3 align-items-center mt-2">
+                <div class="col-2">
+                  <label for="email_value" class="col-form-label">이메일</label>
+                </div>
+                <div class="col-6">
+                  <input type="email" name="email_value" id="email_value" class="form-control" />
+                </div>
+              </div>
+
+              <div class="row g-3 align-items-center mt-2">
+                <div class="col-2">
+                  <label for="phone_value" class="col-form-label">전화번호</label>
+                </div>
+                <div class="col-6">
+                  <input type="text" name="phone_value" id="phone_value" class="form-control" />
+                </div>
+              </div>
+
+              <div class="row g-3 align-items-center mt-2">
+                <div class="col-2">
+                  <label for="content_value" class="col-form-label">내용</label>
+                </div>
+                <div class="col-6">
+                  <textarea type="text" name="content_value" id="content_value" class="form-control"
+                    rows="10"></textarea>
+                </div>
+              </div>
+
+              <div class="col-3 mt-5 send_button">
+                <input type="submit" class="btn btn-success btn-lg" value="전송하기" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!-- footer -->
+      <div class="row bottom text-center">
+        <img src="{{ footerModel.logo.url }}" class="logo" alt="" />
+
+        <strong>{{ footerModel.title }}</strong>
+        <center>{{ footerModel.content|linebreaks }}</center>
+      </div>
+
+      <!-- Modal -->
+
+      {% for representative in representativeIntroductionModel %}
+      <div class="modal fade" id="r_modal{{ representative.id }}" tabindex="-1"
+        aria-labelledby="r_modalLabel{{ representative.id }}" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="r_modalLabel{{ representative.id }}">{{ representative.name }} 대표 이력</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body row">
+              <div class="col img_portfolio_deatil_img">
+                <img class="img_portfolio_deatil justify-content-center" src="{{ representative.profileImage.url }}"
+                  alt="" />
+
+                <div class="text-center font_40 portfolio_name">{{ representative.name }} 대표</div>
+              </div>
+              <div class="col">
+                {% if representative.current_history %}
+                <h1>현</h1>
+                <ul>
+                  {% for line in representative.getCurrentHistory %}
+                  <li>{{ line }}</li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
+
+                {% if representative.past_history %}
+                <h1>전</h1>
+                <ul>
+                  {% for line in representative.getPastHistory %}
+                  <li>{{ line }}</li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
+
+                {% if representative.qualification %}
+                <h1>자격</h1>
+                <p>
+                  {{ representative.qualification }}
+                </p>
+                {% endif %}
+
+                {% if representative.content %}
+                <ul>
+                  {% for line in representative.getcontent %}
+                  <li>{{ line }}</li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                닫기
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      {% endfor %}
+
+
+      <!-- 
+  <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel1">김태호 대표 이력</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body row">
+          <div class="col img_portfolio_deatil_img">
+            <img class="img_portfolio_deatil justify-content-center" src="{% static '/images/김태호대표1.jpg' %}" alt="" />
+
             <div class="text-center font_40 portfolio_name">김태호 대표</div>
           </div>
-          <div
-            class="col portfolio2 mouse_over"
-            data-bs-toggle="modal"
-            data-bs-target="#modal2"
-          >
-            <img
-              class="img_portfolio"
-              src="{% static '/images/최미림대표.png' %}"
-              alt=""
-            />
+          <div class="col">
+            <h1>현</h1>
+            <ul>
+              <li>라이프코칭센터 행복공방 대표</li>
+              <li>KAC자격증 기관인증 심사위원</li>
+              <li>누적코칭시간 3500시간 이상</li>
+              <li>5R코칭디러십 전문 강사</li>
+              <li>12년차 전문 코치</li>
+              <li>
+                성인코칭, 퇴사코칭, 예비부부코칭, 부모코칭, 진로코칭,
+                대학생코칭, 청년코칭, 청소년코칭, Design Your 20XX운영중
+              </li>
+            </ul>
+            <h1>전</h1>
+            <ul>
+              <li>멘토코치 2016~2018년</li>
+              <li>부모코칭 프로그램 공동개발 2016~2017</li>
+              <li>(사)한국코치협회공익코칭위원회 위원 2017년</li>
+              <li>아동청소년교육국 위원 2017년</li>
+              <li>숭실대학교 진로코칭 진행 2018년</li>
+              <li>우송정보대학교 진로코칭 진행 2018년</li>
+            </ul>
+
+            <h1>자격</h1>
+            <p>
+              (사)한국코치협회KPC / 국제코치연맹(ICF)PCC / 부모교육상담사 /
+              미술심리치료사 1급 / 심리상담사 2급 / 인성지도사 2급 /
+              진로적성상삼사 1급 / 심리분석사 1급 / 자기주도학습지도사 1급 /
+              진로학습전문가 2급
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            닫기
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel2">최미림 대표 이력</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body row">
+          <div class="col img_portfolio_deatil_img">
+            <img class="img_portfolio_deatil justify-content-center" src="{% static '/images/최미림대표.png' %}" alt="" />
+
             <div class="text-center font_40 portfolio_name">최미림 대표</div>
           </div>
+          <div class="col portfolio_deatil_text">
+            <ul>
+              <li>라이프코칭센터 행복공방 공동 대표</li>
+              <li>한국코치협회 인증 전문코치 KAC, KPC</li>
+              <li>청소년 진로학습코칭지도사</li>
+              <li>누적코칭시간 400시간 이상</li>
+              <li>교육기업 사내멘토코치 (2017, 2018)</li>
+              <li>버크만 베이직 플러스 디브리퍼</li>
+              <li>고객만족 1등 라이프코치</li>
+              <li>한국코치협회 코칭컨페스티벌 운영팀장(2019)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            닫기
+          </button>
         </div>
       </div>
     </div>
-
-    <!-- 서비스 -->
-    <div class="row content" id="services">
-      <div class="row justify-content-center text-center">
-        <div class="services_introduce font_40">
-          <div>행복공방<br /><strong>서비스</strong></div>
-        </div>
-        <div class="services_line"></div>
-      </div>
-
-      <div class="row services justify-content-center">
-        <div
-          class="services_content mouse_over"
-          data-bs-toggle="modal"
-          data-bs-target="#modal3"
-        >
-          <img
-            class="img_portfolio"
-            src="{% static '/images/성인코칭.png' %}"
-            alt=""
-          />
-          <div class="services_text services_text text-center font_26 mt-3">
-            성인 코칭
-          </div>
-        </div>
-        <div
-          class="services_content mouse_over"
-          data-bs-toggle="modal"
-          data-bs-target="#modal4"
-        >
-          <img
-            class="img_portfolio"
-            src="{% static '/images/청소년코칭.png' %}"
-            alt=""
-          />
-          <div class="services_text services_text text-center font_26 mt-3">
-            청소년 코칭
-          </div>
-        </div>
-        <div
-          class="services_content mouse_over"
-          data-bs-toggle="modal"
-          data-bs-target="#modal5"
-        >
-          <img
-            class="img_portfolio"
-            src="{% static '/images/부모코칭.png' %}"
-            alt=""
-          />
-          <div class="services_text services_text text-center font_26 mt-3">
-            부모 코칭
-          </div>
-        </div>
-        <div
-          class="services_content mouse_over"
-          data-bs-toggle="modal"
-          data-bs-target="#modal6"
-        >
-          <img
-            class="img_portfolio"
-            src="{% static '/images/전문코치멘토링과정.png' %}"
-            alt=""
-          />
-          <div class="services_text services_text text-center font_26 mt-3">
-            전문코치 멘토링 과정
-          </div>
-        </div>
-        <div
-          class="services_content mouse_over"
-          data-bs-toggle="modal"
-          data-bs-target="#modal7"
-        >
-          <img
-            class="img_portfolio"
-            src="{% static '/images/버크만검사.png' %}"
-            alt=""
-          />
-          <div class="services_text services_text text-center font_26 mt-3">
-            버크만 검사
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 후기 -->
-    <div class="row content" id="review">
-      <div class="row justify-content-center text-center">
-        <div class="review_title font_40">
-          <div>행복공방<br /><strong>고객후기</strong></div>
-        </div>
-        <div class="review_line line"></div>
-      </div>
-
-      <div class="row review justify-content-center">
-        <div class="review_content">
-          <div class="radius_box">
-            <img
-              class="img_radius"
-              src="{% static '/images/부모코칭.png' %}"
-              alt=""
-            />
-          </div>
-          <div class="services_text text-center font_15 mt-3">김**님</div>
-          <div class="services_text text-center font_18 mt-3">
-            행복공방 만난 후 즐거워요
-          </div>
-          <div class="services_text text-center font_13 mt-5">
-            행복공방을 알게된 후 너무 즐거워요.<br />
-            강추합니다.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 문의하기 -->
-    <div class="row content" id="question">
-      <div class="col">
-        <img
-          class="img_radius"
-          src="{% static '/images/상담받기.png' %}"
-          alt=""
-        />
-      </div>
-      <div class="col">
-        <div class="question_box">
-          <div class="question_title font_40">
-            <div>행복공방<br /><strong>상담 받기</strong></div>
-          </div>
-          <div class="question_line line"></div>
-
-          <form action="contactUsView/" method="post">
-            {% csrf_token %}
-            <div class="row g-3 align-items-center mt-2">
-              <!-- 성함, 이메일, 전화번호, 내용 -->
-
-              <div class="col-2">
-                <label for="name_value" class="col-form-label">성함</label>
-              </div>
-              <div class="col-6">
-                <input
-                  type="text"
-                  name="name_value"
-                  id="name_value"
-                  class="form-control"
-                />
-              </div>
+  </div> -->
+      <!-- 서비스 모델  -->
+      {% for service in serviceModel %}
+      <div class="modal fade" id="modal{{ service.id }}" tabindex="-1" aria-labelledby="modalLabel{{ service.id }}"
+        aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalLabel{{ service.id }}">{{ service.name }}</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-
-            <div class="row g-3 align-items-center mt-2">
-              <div class="col-2">
-                <label for="email_value" class="col-form-label">이메일</label>
-              </div>
-              <div class="col-6">
-                <input
-                  type="email"
-                  name="email_value"
-                  id="email_value"
-                  class="form-control"
-                />
-              </div>
-            </div>
-
-            <div class="row g-3 align-items-center mt-2">
-              <div class="col-2">
-                <label for="phone_value" class="col-form-label">전화번호</label>
-              </div>
-              <div class="col-6">
-                <input
-                  type="text"
-                  name="phone_value"
-                  id="phone_value"
-                  class="form-control"
-                />
-              </div>
-            </div>
-
-            <div class="row g-3 align-items-center mt-2">
-              <div class="col-2">
-                <label for="content_value" class="col-form-label">내용</label>
-              </div>
-              <div class="col-6">
-                <textarea
-                  type="text"
-                  name="content_value"
-                  id="content_value"
-                  class="form-control"
-                  rows="10"
-                ></textarea>
-              </div>
-            </div>
-
-            <div class="col-3 mt-5 send_button">
-              <input
-                type="submit"
-                class="btn btn-success btn-lg"
-                value="전송하기"
-              />
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-
-    <!-- footer -->
-    <div class="row bottom text-center">
-      <img src="./images/logo.png" class="logo" alt="" />
-
-      <strong>행복공방</strong>
-      <p>Tel.010-0000-0000 | Fel.010-0000-0000 | 주소 :</p>
-      <p>개인정보 보호정책 | 일반 약관 및 조건</p>
-    </div>
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="modal1"
-      tabindex="-1"
-      aria-labelledby="modalLabel1"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalLabel1">김태호 대표 이력</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body row">
-            <div class="col img_portfolio_deatil_img">
-              <img
-                class="img_portfolio_deatil justify-content-center"
-                src="{% static '/images/김태호대표1.jpg' %}"
-                alt=""
-              />
-
-              <div class="text-center font_40 portfolio_name">김태호 대표</div>
-            </div>
-            <div class="col">
-              <h1>현</h1>
-              <ul>
-                <li>라이프코칭센터 행복공방 대표</li>
-                <li>KAC자격증 기관인증 심사위원</li>
-                <li>누적코칭시간 3500시간 이상</li>
-                <li>5R코칭디러십 전문 강사</li>
-                <li>12년차 전문 코치</li>
-                <li>
-                  성인코칭, 퇴사코칭, 예비부부코칭, 부모코칭, 진로코칭,
-                  대학생코칭, 청년코칭, 청소년코칭, Design Your 20XX운영중
-                </li>
-              </ul>
-              <h1>전</h1>
-              <ul>
-                <li>멘토코치 2016~2018년</li>
-                <li>부모코칭 프로그램 공동개발 2016~2017</li>
-                <li>(사)한국코치협회공익코칭위원회 위원 2017년</li>
-                <li>아동청소년교육국 위원 2017년</li>
-                <li>숭실대학교 진로코칭 진행 2018년</li>
-                <li>우송정보대학교 진로코칭 진행 2018년</li>
-              </ul>
-
-              <h1>자격</h1>
-              <p>
-                (사)한국코치협회KPC / 국제코치연맹(ICF)PCC / 부모교육상담사 /
-                미술심리치료사 1급 / 심리상담사 2급 / 인성지도사 2급 /
-                진로적성상삼사 1급 / 심리분석사 1급 / 자기주도학습지도사 1급 /
-                진로학습전문가 2급
-              </p>
+            <div class="modal-body row">{{ service.content }}</div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                닫기
+              </button>
             </div>
           </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              닫기
-            </button>
-          </div>
         </div>
       </div>
-    </div>
+      {% endfor %}
 
-    <div
-      class="modal fade"
-      id="modal2"
-      tabindex="-1"
-      aria-labelledby="modalLabel2"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalLabel2">최미림 대표 이력</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body row">
-            <div class="col img_portfolio_deatil_img">
-              <img
-                class="img_portfolio_deatil justify-content-center"
-                src="{% static '/images/최미림대표.png' %}"
-                alt=""
-              />
+      <!-- 부트스트랩 자바스크립트 -->
+      <!-- Optional JavaScript; choose one of the two! -->
 
-              <div class="text-center font_40 portfolio_name">최미림 대표</div>
-            </div>
-            <div class="col portfolio_deatil_text">
-              <ul>
-                <li>라이프코칭센터 행복공방 공동 대표</li>
-                <li>한국코치협회 인증 전문코치 KAC, KPC</li>
-                <li>청소년 진로학습코칭지도사</li>
-                <li>누적코칭시간 400시간 이상</li>
-                <li>교육기업 사내멘토코치 (2017, 2018)</li>
-                <li>버크만 베이직 플러스 디브리퍼</li>
-                <li>고객만족 1등 라이프코치</li>
-                <li>한국코치협회 코칭컨페스티벌 운영팀장(2019)</li>
-              </ul>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              닫기
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
 
-    <div
-      class="modal fade"
-      id="modal3"
-      tabindex="-1"
-      aria-labelledby="modalLabel3"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalLabel3">성인 코칭</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body row">공사중</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              닫기
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="modal fade"
-      id="modal4"
-      tabindex="-1"
-      aria-labelledby="modalLabel4"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalLabel4">청소년 코칭</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body row">공사중</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              닫기
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="modal fade"
-      id="modal5"
-      tabindex="-1"
-      aria-labelledby="modalLabel5"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalLabel5">부모 코칭</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body row">공사중</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              닫기
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="modal fade"
-      id="modal6"
-      tabindex="-1"
-      aria-labelledby="modalLabel6"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalLabel6">전문코치 멘토링 과정</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body row">공사중</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              닫기
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="modal fade"
-      id="modal7"
-      tabindex="-1"
-      aria-labelledby="modalLabel7"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalLabel7">버크만 검사</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body row">공사중</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              닫기
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- <div class="container">
-
-    </div> -->
-
-    <!-- 부트스트랩 자바스크립트 -->
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+      <!-- Option 2: Separate Popper and Bootstrap JS -->
+      <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
     -->
 
-    <script src="{% static '/js/js.js' %}"></script>
-  </body>
+      <script src="{% static '/js/js.js' %}"></script>
+</body>
+
 </html>

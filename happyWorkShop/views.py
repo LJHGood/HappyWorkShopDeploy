@@ -7,7 +7,26 @@ from happyWorkShop.models import *
 
 
 def index(request):
-    return render(request, "index.html")
+    introduceModel = IntroduceModel.objects.last()
+    representativeIntroductionModel = RepresentativeIntroductionModel.objects.all()
+    representativeIntroductionModel = representativeIntroductionModel[len(representativeIntroductionModel) - 2:len(representativeIntroductionModel)]
+    serviceModel = ServiceModel.objects.all()
+    reviewModel = ReviewModel.objects.all()
+    questionModel = QuestionModel.objects.last()
+    footerModel = FooterModel.objects.last()
+
+
+    content = {
+        "introduceModel":introduceModel,
+        "representativeIntroductionModel":representativeIntroductionModel,
+        "serviceModel":serviceModel,
+        "reviewModel":reviewModel,
+        "questionModel":questionModel,
+        "footerModel":footerModel,
+    }
+
+
+    return render(request, "index.html", content)
 
 
 def contactUsView(request):
